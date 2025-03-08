@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content at the top */
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+
+.display{
+    display: flex;
+    justify-content: center; 
+        align-items: center;
+        flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 15%;
+    text-align: center;
+    width: 70%;
+    height: auto;
+    overflow: visible; 
+    min-height: 80vh;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(25, 24, 24, 0.2);
+    background-color: white;
+
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.input-group label {
+    margin-right: 10px;
+}
+.image-link {
+    text-align: center;
+    flex: 1;
+    max-height:100%;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto; /* Ensures full visibility */
+}
+.form-section{
+    flex:1;
+    margin-left: 20px;
+    text-align: left;
+}
+.create-account-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+a{
+    color: #060606;
+    text-align: left;
+}
+input[type="text"],
+input[type="email"],input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid rgb(175, 174, 174);
+    background-color: transparent;
+    outline: none;
+}
+input[type="text"]:focus,
+input[type="email"]:focus ,input[type="password"]:focus{
+    border-bottom-color: #060606;
+}
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder {
+    color: #060606;
+}
+.checkbox-group{
+    text-align: left;
+    margin-bottom: 15px;
+}
+.checkbox-group label {
+    font-size: 14px;
+}
+.img-height{
+    height:"300px";
+     width:"auto";
+}
+button{
+    background-color: rgb(129, 211, 238);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+}
+button:hover{
+    background-color: rgb(98, 187, 216);
+}
+.social-icon {
+    margin-right: 5px; /* Adds space between icons */
+    vertical-align: middle; 
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* Optional: You can also add hover effects for icons if needed */
+.social-icon:hover {
+    opacity: 0.8; /* Slightly transparent effect when hovering */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+/* Style the select dropdown to match the text inputs */
+select.form-select {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid rgb(175, 174, 174);
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Change border color on focus */
+select.form-select:focus {
+    border-bottom-color: #060606;
+    outline: none;
+}
+
+/* Style the dropdown options */
+select.form-select option {
+    color: #060606;
+    background-color: #ffffff;
+}
+button{
+	cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1440px) {
+    .display {
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .separate {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .card{
+    	width: 100%
+    }
+}
+@media (max-width: 767px) {
+	.container {
+        padding-top: 5vh; /* Add spacing from the top */
+    }
+    .display {
+        flex-direction: column; /* Switch to column */
+        width: 90%;
+        height: auto; /* Adjust height automatically */
+        margin-top: 5%;
+    }
+
+    .image-link {
+        margin-bottom: 20px;
+    }
+
+    .form-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select.form-select {
+        width: 90%; /* Make inputs full width */
+    }
+}
+
+@media (max-width: 480px) {
+    .display {
+        width: 95%;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .display {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select.form-select {
+        width: 100%;
+    }
+}
